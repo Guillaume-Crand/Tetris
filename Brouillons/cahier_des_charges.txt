@@ -1,0 +1,44 @@
+Un menu que présentera Valentin
+
+Des tetraminos qui
+    • tombent 
+    • tourne
+    • se déplacent horizontalement
+    • s’arrêtent 
+
+Affiche le tetramino suivant dans une petite fenêtre en haut à droite
+afficher l’emplacement que prendrait le tetramino s’il tombait tout en bas de la grille(tetra_fantome)
+
+Lorsque le tetramino s’arrête :
+    • Il test si la ligne est complète 
+    • si c’est le cas, il rajoute une ligne à l’adversaire, s’il y en a un
+    • test si le joueur a perdu
+    • ré affiche le tetra_next
+
+Dans les paramètres on peut changer  :
+    • la taille des carré
+    • la vitesse des tetraminos
+
+Durant la partie on utilise :
+    • un objet réseau
+    • un objet horloge
+    • des scores affichés en consoles
+    • la croix en haut a droite pour fermer la fenetre
+
+
+
+
+
+Autre:
+    • stockage de pieces
+    • une IA 
+    • faire un tableau des score
+    • succes
+    • creer des comptes 
+    • (mode histoire)
+    • malus :
+        ? pieces qui tombent d’un coup
+        ? perdre quand t’arrive à un certain score
+    • liste des parametres
+        ? afficher l’heure en fullscreen
+        ? (mode avec des smiley )
