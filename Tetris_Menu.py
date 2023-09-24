@@ -668,7 +668,7 @@ class AButton:
 if __name__ == "__main__":
     screen = Menu()  # Génération du menu
     menu = MenuFrame("img/TetrisFond.png")
-    # musique = Musique()
+    musique = Musique()
 
     while True:
         # LISTE D'EVENTS USER
