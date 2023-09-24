@@ -44,9 +44,9 @@ class Menu:
 
     # initialisation et placement de l'image de fond et du logo
     def parametres_menu(self):
-        self.fond = pygame.image.load("TetrisFond.png")
+        self.fond = pygame.image.load("img/TetrisFond.png")
         self.fenetre.blit(self.fond, (0, 0))
-        self.image_menu = pygame.image.load("TetrisLogo.png")
+        self.image_menu = pygame.image.load("img/TetrisLogo.png")
         self.fenetre.blit(
             self.image_menu, (self.hauteur_ecran / 3.45, self.longueur_ecran / 7)
         )
@@ -206,12 +206,12 @@ class SecondFrame:
     # Fonction qui s'active lorsque le bouton "Solo" est cliqué
     def solo(self):
         screen = pygame.display.set_mode((1366, 768), FULLSCREEN)
-        image_fond = pygame.image.load("cubefond2.jpg")
+        image_fond = pygame.image.load("img/cubefond2.jpg")
         screen.blit(image_fond, (0, 0))
 
         tests.partie(screen, 1)
 
-        img = pygame.image.load("TetrisFin.jpg")
+        img = pygame.image.load("img/TetrisFin.jpg")
         screen.blit(img, (0, 0))
         pygame.display.flip()
         pygame.time.wait(3000)
@@ -220,12 +220,12 @@ class SecondFrame:
 
     def multireseau(self):
         screen = pygame.display.set_mode((683, 766))
-        image_fond = pygame.image.load("cubefond2.jpg")
+        image_fond = pygame.image.load("img/cubefond2.jpg")
         screen.blit(image_fond, (0, 0))
 
         tests.partie(screen, 3)
 
-        img = pygame.image.load("TetrisFinMulti.png")
+        img = pygame.image.load("img/TetrisFinMulti.png")
         screen.blit(img, (-65, 0))
         pygame.display.flip()
         pygame.time.wait(3000)
@@ -234,12 +234,12 @@ class SecondFrame:
 
     def multilocal(self):
         screen = pygame.display.set_mode((1366, 768), FULLSCREEN)
-        image_fond = pygame.image.load("cubefond2.jpg")
+        image_fond = pygame.image.load("img/cubefond2.jpg")
         screen.blit(image_fond, (0, 0))
 
         tests.partie(screen, 2)
 
-        img = pygame.image.load("TetrisFin.jpg")
+        img = pygame.image.load("img/TetrisFin.jpg")
         screen.blit(img, (0, 0))
         pygame.display.flip()
         pygame.time.wait(3000)
@@ -641,7 +641,7 @@ class Quit:
         self.background = background
         self.menu = menu
         self.buttons = []  # Liste vide de boutons
-        self.img = pygame.image.load("TetrisQuit.png")
+        self.img = pygame.image.load("img/TetrisQuit.png")
         self.menu.fenetre.blit(self.img, (0, 0))
         pygame.display.flip()
         pygame.time.wait(3000)
@@ -667,7 +667,7 @@ class AButton:
 
 if __name__ == "__main__":
     screen = Menu()  # Génération du menu
-    menu = MenuFrame("TetrisFond.png")
+    menu = MenuFrame("img/TetrisFond.png")
     # musique = Musique()
 
     while True:
