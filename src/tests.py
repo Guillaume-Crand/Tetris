@@ -1,6 +1,6 @@
-from Grille import *
-from horloge import *
-from reseau import *
+from .Grille import *
+from .horloge import *
+from .reseau import *
 
 
 def partie(screen, type_jeu=1):

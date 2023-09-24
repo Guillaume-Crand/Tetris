@@ -15,7 +15,7 @@ import sys
 import pygame
 from pygame.locals import *
 
-import tests as tests
+import src.tests as tests
 
 pygame.init()
 
